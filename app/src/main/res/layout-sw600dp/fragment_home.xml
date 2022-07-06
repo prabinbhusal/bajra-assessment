@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layoutTop"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/layoutBottom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+
+        <ImageView
+            android:id="@+id/imageViewFullscreen"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="25dp"
+            android:src="@drawable/ic_fullscreen"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:tint="@color/white" />
+
+        <ImageView
+            android:id="@+id/imageViewExitFullscreen"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="25dp"
+            android:src="@drawable/ic_exit_fullscreen"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:tint="@color/white" />
+
+        <EditText
+            android:id="@+id/editTextComment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="250dp"
+            android:background="@null"
+            android:padding="10dp"
+            android:hint="@string/enter_comment_here"
+            android:visibility="gone"
+            tools:visibility="visible"
+            android:textSize="50sp"
+            android:inputType="textCapSentences"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white_60"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewComment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="204dp"
+            android:layout_marginTop="250dp"
+            android:textColor="@color/white"
+            android:textSize="50sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layoutBottom"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:background="@color/gray"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/annotate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/ic_annotate"
+                app:layout_constraintBottom_toTopOf="@+id/textView2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:tint="@color/white_60" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/annotate"
+                android:textColor="@color/white_60"
+                android:textSize="28sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/camera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:ignore="MissingConstraints">
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/ic_photo"
+                app:layout_constraintBottom_toTopOf="@+id/textView3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:tint="@color/white_60" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Save Image"
+                android:textColor="@color/white_60"
+                android:textSize="28sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/measure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:ignore="MissingConstraints">
+
+            <ImageView
+                android:id="@+id/imageViewMeasure"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/ic_measure"
+                app:layout_constraintBottom_toTopOf="@+id/textViewMeasure"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:tint="@color/white_60" />
+
+            <TextView
+                android:id="@+id/textViewMeasure"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/measure"
+                android:textColor="@color/white_60"
+                android:textSize="28sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.helper.widget.Flow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:constraint_referenced_ids="annotate, camera, measure"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:fabCustomSize="130dp"
+        app:maxImageSize="60dp"
+        app:layout_constraintBottom_toBottomOf="@+id/layoutTop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layoutTop"
+        app:srcCompat="@drawable/ic_burst" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

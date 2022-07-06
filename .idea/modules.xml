@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Bajra.iml" filepath="$PROJECT_DIR$/.idea/modules/Bajra.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Bajra.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Bajra.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Bajra.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Bajra.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Bajra.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Bajra.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Bajra.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Bajra.app.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/tooltips/Bajra.tooltips.iml" filepath="$PROJECT_DIR$/.idea/modules/tooltips/Bajra.tooltips.iml" />
+    </modules>
+  </component>
+</project>

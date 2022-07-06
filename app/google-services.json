@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "91383615954",
+    "project_id": "bajra-assessment",
+    "storage_bucket": "bajra-assessment.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:91383615954:android:f3bb2eedbc94d11cf4f80b",
+        "android_client_info": {
+          "package_name": "com.bajra.assessment"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "91383615954-d0n4i72eken4ss8q5hr7dq2to33hra0i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBmmzBfVE71mv3n7m02i9V3fGC41PbYg3g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "91383615954-d0n4i72eken4ss8q5hr7dq2to33hra0i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
